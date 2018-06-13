@@ -134,7 +134,7 @@
                                                 <div class="row btn-login ">
                                                     <button class="btn btn-twitter btn-lg btn-block responsive-width">Login with Twitter</button>
                                                 </div>
-                                                <div class="row btn-login">
+                                                <div>
                                                     <h4 class="text-center">OR</h4>
                                                 </div>
                                                 <div class="row btn-login">
@@ -146,7 +146,7 @@
                                                 </div>
                                                 <div class="row btn-login">
                                                 <ul class="list-inline text-center">
-                                                    <li><button type="button" class="btn btn-primary next-step">Next</button></li>
+                                                    <li><button type="button" class="btn btn-success next-step">Next</button></li>
                                                 </ul>
                                                 </div>
                                             </div>
@@ -180,7 +180,7 @@
                                                 </div>
                                                 <ul class="list-inline text-center">
                                                     <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
-                                                    <li><button type="button" class="btn btn-primary next-step">Next</button></li>
+                                                    <li><button type="button" class="btn btn-success next-step">Next</button></li>
                                                 </ul>
                                             </div>
                                             <div class="col-xs-4"></div>
@@ -224,7 +224,7 @@
                                                 </div>
                                                 <ul class="list-inline text-center">
                                                     <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
-                                                    <li><button type="button" class="btn btn-primary next-step">Next</button></li>
+                                                    <li><button type="button" class="btn btn-success next-step">Next</button></li>
                                                 </ul>
                                             </div>
                                             <div class="col-xs-4"></div>
@@ -284,7 +284,7 @@
                                                 </div>
                                                 <ul class="list-inline text-center">
                                                     <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
-                                                    <li><button type="button" class="btn btn-primary next-step">Next</button></li>
+                                                    <li><button type="button" class="btn btn-success next-step">Next</button></li>
                                                 </ul>
                                             </div>
                                             <div class="col-xs-4"></div>
@@ -298,54 +298,72 @@
                                                     <H3 class="text-uppercase text-center">ROUND UP DETAILS</H3>
                                                     <p class="text-uppercase text-center">Enter the details</p>
                                                 </div>
+													<div class="row">
+														<!-- <div class="col-xs-12 email-reg"> -->
+															<div class="col-xs-12">
+                                                        <input type="text" class="form-control" style="margin-bottom: 5px" placeholder="Charity Name">
+                                                    </div>
+                                                </div>
                                                 <div class="row">
+                                                    <div class="col-xs-12">
+                                                        <input type="text" class="form-control" style="margin-bottom: 5px" placeholder="Registration Number">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-xs-12">
+                                                        <input type="text" class="form-control email-reg" style="margin-bottom: 5px" placeholder="User">
+                                                    </div>
+                                                </div>
+												<div class="row">
+                                                    <div class="col-xs-12">
+                                                        <select name="Month" class="form-control email-reg">
+                                                            <option selected>Staff</option>
+                                                            <option value="january">1</option>
+                                                            <option value="february">2</option>
+                                                            <option value="march">3</option>
+                                                            <option value="april">4</option>
+                                                            <option value="may">5</option>
+                                                            <option value="june">6</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-xs-12">
+                                                        <select name="Year" class="form-control email-reg">
+                                                            <option selected>Location</option>
+                                                            <option value="dublin">Dublin</option>
+                                                            <option value="galway">Galway</option>
+                                                            <option value="cork">Cork</option>
+                                                            <option value="limerick">Limerick</option>
+                                                            <option value="kilkenny">Kilkenny</option>
+                                                            <option value="waterford">Waterford</option>
+                                                            <option value="belfast">Belfast</option>
+                                                            <option value="athlone">Athlone</option>
+                                                            <option value="wexford">Wexford</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+												<div class="row">
                                                     <div class="col-xs-4">
-                                                        <span class="rnd-up pull-right" style="padding-top:10px"> I am a:</span>
+                                                        <span class="rnd-up pull-right" style="padding-top:10px"> Charity 3/4:</span>
                                                     </div>
                                                     <div class="col-xs-4">
                                                         <div class="radio pull-left">
-                                                            <label><input type="radio" name="type" id="donor" checked>Donor</label>
+                                                            <label><input type="radio" name="type" id="yes" checked>Yes</label>
                                                         </div>
                                                     </div>
                                                     <div class="col-xs-4 pull-left">
                                                         <div class="radio">
-                                                            <label><input type="radio" name="type" id="charity">Charity</label>
+                                                            <label><input type="radio" name="type" id="no">No</label>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="row">
-                                                    <div class="col-xs-4">
-                                                        <div class="text-right">
-                                                            <p class="rnd-up align-middle"> Find Your Cause:</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-xs-8" >
-                                                        <select class="form-control" id="select-cause" onchange="onCauseSelect()">
-                                                            <option selected value="dummy">Select your cause</option>
-                                                            <option value="education">Education</option>
-                                                            <option value="health">Health</option>
-                                                            <option value="ngo">NGO</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                                <div class="donor-charityname row">
-                                                    <div class="col-xs-4">
-                                                        <div class="text-right">
-                                                            <p class="rnd-up align-middle"> Charity Name:</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-xs-8"  style="margin-bottom: 5px" >
-                                                        <select class="form-control" id="select-charityName" >
-                                                            <option selected>Select a charity</option>
-                                                            <option value="education">A</option>
-                                                            <option value="health">B</option>
-                                                            <option value="ngo">C</option>
-                                                        </select>
+												<div class="row">
+                                                    <div class="col-xs-12">
+                                                        <input type="text" class="form-control email-reg" style="margin-bottom: 5px" placeholder="Charities">
                                                     </div>
                                                 </div>
                                                 <ul class="list-inline text-center">
                                                     <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
-                                                    <li><button type="button" class="btn btn-primary next-step">Next</button></li>
+                                                    <li><button type="button" class="btn btn-success next-step">Next</button></li>
                                                 </ul>
                                             </div>
                                             <div class="col-xs-4"></div>
