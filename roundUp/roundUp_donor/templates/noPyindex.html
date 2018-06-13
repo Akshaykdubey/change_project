@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Wizard</title>
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+		  <!-- Google Fonts -->
+			<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700" rel="stylesheet">
+        <link rel="stylesheet" href="../static/style.css">
+    </head>
+    <body>
+		<!--==========================
+			Header
+			============================-->
+		<header id="header">
+			<div class="container">
+		
+			<div id="logo" class="hid">
+				<a href="#hero"><img src="logo.png" alt="" title="" /></img></a>
+				<!-- Uncomment below if you prefer to use a text logo -->
+				<!--<h1><a href="#hero">Regna</a></h1>-->
+			</div>
+		
+			
+			<nav id="nav-menu-container">
+				<ul class="nav-menu">
+				<li class="menu-active"><a href="#hero">Home</a></li>
+				<li><a href="#about">How it works</a></li>
+				<li><a href="#facts">Join</a></li>
+				<li><a href="#charities">Charities</a></li>
+				<li><a href="#portfolio">Learn More</a></li>
+				<li><a href="#contact">Contact Us</a></li>
+				<li><a href="login/index.html" id ="login"> <div class="icon" id="sign-in"><i class="fa fa-sign-in fa-2x"></i></div></a>
+				<!-- <li><a href="#menu-toggle" id="menu-toggle">Login</a></li> -->
+				</ul>
+			</nav><!-- #nav-menu-container -->
+			</div> 
+		</header><!-- #header -->
+        <div class="container">
+            <div class="row">
+                <section>
+                <div class="wizard">
+                    <div class="wizard-inner">
+                    <div class="row">
+                        <div class="col-xs-4">
+                        </div>
+                        <div class="col-xs-4">
+                        <div class="connecting-line"></div>
+                        <ul class="nav nav-tabs" role="tablist">
+                            <!--{% if token == False: %}-->
+                                <li role="presentation" class="active">
+                            <!--{% else %}
+                                <li role="presentation" class="disabled">
+                            {%endif%} -->
+
+                                <a href="#step1" data-toggle="tab" aria-controls="step1" role="tab" title="Account Setup">
+                                    <span class="round-tab">
+                                        <i> 1 </i>
+                                    </span>
+                                </a>
+                            </li>
+
+                            <li role="presentation" class="disabled">
+                                <a href="#step2" data-toggle="tab" aria-controls="step2" role="tab" title="Email Registration">
+                                    <span class="round-tab">
+                                        <i> 2 </i>
+                                    </span>
+                                </a>
+                            </li>
+                            <!--{% if token == True: %}
+                                <li role="presentation" class="active"> -->
+                           <!-- {% else %} -->
+                                <li role="presentation" class="disabled">
+                           <!-- {%endif%} -->
+                                <a href="#step3" data-toggle="tab" aria-controls="step3" role="tab" title="Personal Details">
+                                    <span class="round-tab">
+                                        <i> 3 </i>
+                                    </span>
+                                </a>
+                            </li>
+
+                            <li role="presentation" class="disabled">
+                                <a href="#step4" data-toggle="tab" aria-controls="step4" role="tab" title="Credit Card Details">
+                                    <span class="round-tab">
+                                        <i> 4 </i>
+                                    </span>
+                                </a>
+                            </li>
+
+                            <li role="presentation" class="disabled">
+                                <a href="#step5" data-toggle="tab" aria-controls="step5" role="tab" title="Round Up Details">
+                                    <span class="round-tab">
+                                        <i> 5 </i>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        </div>
+                        <div class="col-xs-4">
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="wizard-outer">
+                        <div class="container">
+                            <form role="form">
+                                <div class="tab-content">
+                                    <!--{% if token == False: %} -->
+                                        <div class="tab-pane active" role="tabpanel" id="step1">
+                                    <!--{% else %}
+                                        <div class="tab-pane" role="tabpanel" id="step1">
+                                    {%endif%}-->
+
+                                        <div class="row">
+                                            <div class="col-xs-4"></div>
+                                            <div class="col-xs-4">
+                                                <div class="row">
+                                                    <H3 class="text-uppercase text-center">Create your Account</H3>
+                                                </div>
+                                                <div class="row btn-login">
+                                                    <button class="btn btn-facebook btn-lg btn-block responsive-width">Login with Facebook</button>
+                                                </div>
+                                                <div class="row btn-login">
+                                                    <button class="btn btn-google btn-lg btn-block responsive-width"><a href="/google">Login with Google</a></button>
+                                                </div>
+                                                <div class="row btn-login ">
+                                                    <button class="btn btn-twitter btn-lg btn-block responsive-width">Login with Twitter</button>
+                                                </div>
+                                                <div class="row btn-login">
+                                                    <h4 class="text-center">OR</h4>
+                                                </div>
+                                                <div class="row btn-login">
+                                                    <form class="navbar-form navbar-left" role="email">
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control" placeholder="Email">
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="row btn-login">
+                                                <ul class="list-inline text-center">
+                                                    <li><button type="button" class="btn btn-primary next-step">Next</button></li>
+                                                </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-4"></div>
+                                        </div>
+                                    </div>
+                                    <!-- ############################################################# -->
+                                    <div class="tab-pane" role="tabpanel" id="step2">
+                                        <div class="row">
+                                            <div class="col-xs-4"></div>
+                                            <div class="col-xs-4">
+                                                <div class="row">
+                                                    <H3 class="text-uppercase text-center">Email Registration</H3>
+                                                    <H4 class="text-uppercase text-center">Register with your email id</H4>
+                                                </div>
+                                                <div class="row">
+                                                    <!-- <div class="col-xs-12 email-reg"> -->
+                                                        <div class="col-xs-12">
+                                                        <input type="text" class="form-control" style="margin-bottom: 5px" placeholder="Email">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-xs-12">
+                                                        <input type="text" class="form-control" style="margin-bottom: 5px" placeholder="Password">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-xs-12">
+                                                        <input type="text" class="form-control email-reg" style="margin-bottom: 5px" placeholder="Confirm Password">
+                                                    </div>
+                                                </div>
+                                                <ul class="list-inline text-center">
+                                                    <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
+                                                    <li><button type="button" class="btn btn-primary next-step">Next</button></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xs-4"></div>
+                                        </div>
+
+                                    </div>
+                                    <!-- ############################################################ -->
+                                    <!--{% if token == True: %}
+                                        <div class="tab-pane active" role="tabpanel" id="step3">
+                                    {% else %}-->
+                                        <div class="tab-pane" role="tabpanel" id="step3">
+                                    <!--{%endif%} -->
+                                    <!-- <div class="tab-pane" role="tabpanel" id="step3"> -->
+                                        <div class="row">
+                                            <div class="col-xs-4"></div>
+                                            <div class="col-xs-4">
+                                                <div class="row">
+                                                    <H3 class="text-uppercase text-center">Personal Details</H3>
+                                                    <H4 class="text-uppercase text-center">We will never sell it</H4>
+                                                </div>
+                                                <div class="row">
+                                                    <!-- <div class="col-xs-12 email-reg"> -->
+                                                        <div class="col-xs-12">
+                                                        <input type="text" class="form-control" style="margin-bottom: 5px" placeholder="First Name">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-xs-12">
+                                                        <input type="text" class="form-control" style="margin-bottom: 5px" placeholder="Last Name">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-xs-12">
+                                                        <input type="text" class="form-control" style="margin-bottom: 5px" placeholder="Phone">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-xs-12">
+                                                        <input type="text" class="form-control email-reg" style="margin-bottom: 5px" placeholder="Address">
+                                                    </div>
+                                                </div>
+                                                <ul class="list-inline text-center">
+                                                    <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
+                                                    <li><button type="button" class="btn btn-primary next-step">Next</button></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xs-4"></div>
+                                        </div>
+                                    </div>
+                                    <!-- #################################################### -->
+                                    <div class="tab-pane" role="tabpanel" id="step4">
+                                        <div class="row">
+                                            <div class="col-xs-4"></div>
+                                            <div class="col-xs-4">
+                                                <div class="row">
+                                                    <H3 class="text-uppercase text-center">CREDIT CARD DETAILS</H3>
+                                                    <p class="text-uppercase text-center">Enter the credit card details</p>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-xs-12">
+                                                        <input type="text" class="form-control" style="margin-bottom: 5px" placeholder="Card Number">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-xs-6" style="padding-right: 0px; margin-bottom: 5px">
+                                                        <select name="Month" class="form-control">
+                                                            <option selected>Month</option>
+                                                            <option value="january">January</option>
+                                                            <option value="february">February</option>
+                                                            <option value="march">March</option>
+                                                            <option value="april">April</option>
+                                                            <option value="may">May</option>
+                                                            <option value="june">June</option>
+                                                            <option value="july">July</option>
+                                                            <option value="august">August</option>
+                                                            <option value="september">September</option>
+                                                            <option value="october">October</option>
+                                                            <option value="november">November</option>
+                                                            <option value="december">December</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-xs-6" style="padding-left: 0px; margin-bottom: 5px">
+                                                        <select name="Year" class="form-control">
+                                                            <option selected>Year</option>
+                                                            <option value="2016">2016</option>
+                                                            <option value="2017">2017</option>
+                                                            <option value="2018">2018</option>
+                                                            <option value="2019">2019</option>
+                                                            <option value="2020">2020</option>
+                                                            <option value="2021">2021</option>
+                                                            <option value="2022">2022</option>
+                                                            <option value="2023">2023</option>
+                                                            <option value="2024">2024</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-xs-12">
+                                                        <input type="text" class="form-control email-reg" style="margin-bottom: 5px"  placeholder="CVV">
+                                                    </div>
+                                                </div>
+                                                <ul class="list-inline text-center">
+                                                    <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
+                                                    <li><button type="button" class="btn btn-primary next-step">Next</button></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xs-4"></div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" role="tabpanel" id="step5">
+                                        <div class="row">
+                                            <div class="col-xs-4"></div>
+                                            <div class="col-xs-4">
+                                                <div class="row">
+                                                    <H3 class="text-uppercase text-center">ROUND UP DETAILS</H3>
+                                                    <p class="text-uppercase text-center">Enter the details</p>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-xs-4">
+                                                        <span class="rnd-up pull-right" style="padding-top:10px"> I am a:</span>
+                                                    </div>
+                                                    <div class="col-xs-4">
+                                                        <div class="radio pull-left">
+                                                            <label><input type="radio" name="type" id="donor" checked>Donor</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-4 pull-left">
+                                                        <div class="radio">
+                                                            <label><input type="radio" name="type" id="charity">Charity</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-xs-4">
+                                                        <div class="text-right">
+                                                            <p class="rnd-up align-middle"> Find Your Cause:</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-8" >
+                                                        <select class="form-control" id="select-cause" onchange="onCauseSelect()">
+                                                            <option selected value="dummy">Select your cause</option>
+                                                            <option value="education">Education</option>
+                                                            <option value="health">Health</option>
+                                                            <option value="ngo">NGO</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="donor-charityname row">
+                                                    <div class="col-xs-4">
+                                                        <div class="text-right">
+                                                            <p class="rnd-up align-middle"> Charity Name:</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-8"  style="margin-bottom: 5px" >
+                                                        <select class="form-control" id="select-charityName" >
+                                                            <option selected>Select a charity</option>
+                                                            <option value="education">A</option>
+                                                            <option value="health">B</option>
+                                                            <option value="ngo">C</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <ul class="list-inline text-center">
+                                                    <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
+                                                    <li><button type="button" class="btn btn-primary next-step">Next</button></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xs-4"></div>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+           </div>
+        </div>
+				     <section id="footer">
+    <div class="container">
+      <div class="row text-center text-xs-center text-sm-left text-md-left">
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <h5>Quick links</h5>
+          <ul class="list-unstyled quick-links">
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <h5>Users</h5>
+          <ul class="list-unstyled quick-links">
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <h5>Charities</h5>
+          <ul class="list-unstyled quick-links">
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+            <li><a href="https://wwwe.sunlimetech.com" title="Design and developed by"><i class="fa fa-angle-double-right"></i>Imprint</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+          <ul class="list-unstyled list-inline social text-center">
+            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-facebook"></i></a></li>
+            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-twitter"></i></a></li>
+            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-google-plus"></i></a></li>
+            <li class="list-inline-item"><a href="javascript:void();" target="_blank"><i class="fa fa-envelope"></i></a></li>
+          </ul>
+        </div>
+        </hr>
+      </div>  
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+          <p class="h6">&copy All right Reversed.<a class="text-green ml-2" href="#" target="_blank"><strong>Change</strong></a></p>
+        </div>
+        </hr>
+      </div>  
+    </div>
+  </section>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+        <script type="text/javascript" src="../static/app.js"></script>
+    </body>
+</html>
