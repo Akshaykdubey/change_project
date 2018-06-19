@@ -2,10 +2,14 @@
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
+body{
 
+  background: url("../../hero-bg.jpg") top center;
+
+}
 #header {
-  padding: 30px 0;
-  height: 92px;
+  padding: 20px 0;
+  height: 72px;
   position: fixed;
   left: 0;
   top: 0;
@@ -37,7 +41,7 @@
 }
 
 #header #logo img {
-  padding: 0 0px 35px;
+  padding: 0 15px 35px;
   height: auto;
   width: auto;
   max-height: 100px;
@@ -78,12 +82,10 @@
   list-style: none;
 }
 
-
-
 .nav-menu ul {
   position: relative;
   display: none;
-  top: 100%;
+  top: 90%;
   left: 0;
   z-index: 99;
 }
@@ -153,7 +155,6 @@
   font-size: 13px;
   outline: none;
 }
-
 
 .nav-menu > li {
   margin-left: 10px;
@@ -237,8 +238,8 @@
     }
 
 .connecting-line {
-    height: 2px;
-    background: #e0e0e0;
+    height: 3px;
+    background: #46b56f;
     position: absolute;
     width: 80%;
     margin: 0 auto;
@@ -340,7 +341,21 @@ span.round-tab:hover {
 }
 
 .btn-login{
-    margin: 10px
+    margin: 7px
+}
+
+.next-step{
+  margin-top: 10px;
+  /*padding-top: 10px;*/
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.prev-step {
+    margin-top: 10px;
+  /*padding-top: 10px;*/
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .responsive-width {
@@ -413,6 +428,80 @@ span.round-tab:hover {
     font-size: 1.5vw;
 }
 }
+
+.form-top-left {
+  overflow: hidden;
+  width: 100%;
+  padding: 20px 25px 15px 25px;
+  background: rgba(255,255,255,0.8); 
+  -moz-border-radius: 4px 4px 0 0; -webkit-border-radius: 4px 4px 0 0; border-radius: 4px 4px 0 0;
+  text-align: left;
+  border-radius: 20px 20px 0 0;
+}
+
+.form-bottom-left {
+  overflow: hidden;
+  width: 100%;
+  padding: 10px 25px 15px 25px;
+  background: rgba(89,176,214,0.7);
+  -moz-border-radius: 4px 4px 0 0; -webkit-border-radius: 4px 4px 0 0; border-radius: 4px 4px 0 0;
+  text-align: left;
+  border-radius: 0px 0px 20px 20px;
+}
+
+.form-top-left-page2{
+  overflow: hidden;
+  width: 80%;
+  padding: 10px 25px 15px 25px;
+  margin-left: 13px;
+  background: rgba(255,255,255,0.8); 
+  -moz-border-radius: 4px 4px 0 0; -webkit-border-radius: 4px 4px 0 0; border-radius: 4px 4px 0 0;
+  text-align: left;
+  border-radius: 20px 20px 0 0;
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
 
 .footer {
 

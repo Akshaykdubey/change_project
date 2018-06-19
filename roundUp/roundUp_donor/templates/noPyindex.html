@@ -15,6 +15,12 @@
 		  <!-- Google Fonts -->
 			<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700" rel="stylesheet">
         <link rel="stylesheet" href="../static/style.css">
+		<!-- Bootstrap CSS File -->
+		  <link href="../bootstrap1.min.css" rel="stylesheet">
+
+		  <!-- Libraries CSS Files -->
+		  <link href="../../../Change Website/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+		  <link href="../../../Change Website/lib/animate/animate.min.css" rel="stylesheet">
     </head>
     <body>
 		<!--==========================
@@ -28,8 +34,7 @@
 				<!-- Uncomment below if you prefer to use a text logo -->
 				<!--<h1><a href="#hero">Regna</a></h1>-->
 			</div>
-		
-			
+				
 			<nav id="nav-menu-container">
 				<ul class="nav-menu">
 				<li class="menu-active"><a href="#hero">Home</a></li>
@@ -122,70 +127,79 @@
                                         <div class="row">
                                             <div class="col-xs-4"></div>
                                             <div class="col-xs-4">
-                                                <div class="row">
-                                                    <H3 class="text-uppercase text-center">Create your Account</H3>
-                                                </div>
-                                                <div class="row btn-login">
-                                                    <button class="btn btn-facebook btn-lg btn-block responsive-width">Login with Facebook</button>
-                                                </div>
-                                                <div class="row btn-login">
-                                                    <button class="btn btn-google btn-lg btn-block responsive-width"><a href="/google">Login with Google</a></button>
-                                                </div>
-                                                <div class="row btn-login ">
-                                                    <button class="btn btn-twitter btn-lg btn-block responsive-width">Login with Twitter</button>
-                                                </div>
-                                                <div class="row btn-login">
-                                                    <h4 class="text-center">OR</h4>
-                                                </div>
-                                                <div class="row btn-login">
-                                                    <form class="navbar-form navbar-left" role="email">
-                                                        <div class="form-group">
-                                                            <input type="text" class="form-control" placeholder="Email">
-                                                        </div>
-                                                    </form>
-                                                </div>
-                                                <div class="row btn-login">
-                                                <ul class="list-inline text-center">
-                                                    <li><button type="button" class="btn btn-success next-step">Next</button></li>
-                                                </ul>
-                                                </div>
+                                                <!-- <div class="row"> -->
+												<div class="form-top-left">
+													<H3 class="text-uppercase text-center">Create your Account</H3>
+													<p class="text-uppercase text-center">Login</p>
+												</div>
+                                                
+												<div class="form-bottom-left">
+													<div class="row btn-login">
+														<button class="btn btn-facebook btn-lg btn-block responsive-width">Login with Facebook</button>
+													</div>
+													<div class="row btn-login">
+														<button class="btn btn-google btn-lg btn-block responsive-width"><a href="/google">Login with Google</a></button>
+													</div>
+													<div class="row btn-login ">
+														<button class="btn btn-twitter btn-lg btn-block responsive-width">Login with Twitter</button>
+													</div>
+													<div class="row btn-login">
+														<h4 class="text-center">OR</h4>
+													</div>
+													<div class="row btn-login">
+														<form class="navbar-form navbar-left" role="email">
+															<div class="form-group">
+																<input type="text" class="form-control" placeholder="Email">
+															</div>
+														</form>
+													</div>
+													<div class="row btn-login">
+													<ul class="list-inline text-center">
+														<li><button type="button" class="btn btn-success next-step">Next</button></li>
+													</ul>
+													</div>
+												</div>
                                             </div>
                                             <div class="col-xs-4"></div>
                                         </div>
                                     </div>
                                     <!-- ############################################################# -->
                                     <div class="tab-pane" role="tabpanel" id="step2">
-                                        <div class="row">
+                                        <!-- <div class="row"> -->
                                             <div class="col-xs-4"></div>
-                                            <div class="col-xs-4">
+                                            <div class="col-xs-4 form-group">
                                                 <div class="row">
-                                                    <H3 class="text-uppercase text-center">Email Registration</H3>
-                                                    <H4 class="text-uppercase text-center">Register with your email id</H4>
+													<div class="form-top-left">
+														<H3 class="text-uppercase text-center">Email Registration</H3>
+														<p class="text-uppercase text-center">Register with your email id</p>
+													</div>
                                                 </div>
                                                 <div class="row">
+													<div class="form-bottom-left">
                                                     <!-- <div class="col-xs-12 email-reg"> -->
                                                         <div class="col-xs-12">
                                                         <input type="text" class="form-control" style="margin-bottom: 5px" placeholder="Email">
                                                     </div>
-                                                </div>
-                                                <div class="row">
+                                                <!-- </div> -->
+                                                <!-- <div class="row"> -->
                                                     <div class="col-xs-12">
                                                         <input type="text" class="form-control" style="margin-bottom: 5px" placeholder="Password">
                                                     </div>
-                                                </div>
-                                                <div class="row">
+                                                <!-- </div> -->
+                                                <!-- <div class="row"> -->
                                                     <div class="col-xs-12">
                                                         <input type="text" class="form-control email-reg" style="margin-bottom: 5px" placeholder="Confirm Password">
                                                     </div>
-                                                </div>
+                                                <!-- </div> -->
                                                 <ul class="list-inline text-center">
                                                     <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
                                                     <li><button type="button" class="btn btn-success next-step">Next</button></li>
                                                 </ul>
+												</div>
                                             </div>
+											</div>
                                             <div class="col-xs-4"></div>
-                                        </div>
-
+                                        <!-- </div> -->
                                     </div>
                                     <!-- ############################################################ -->
                                     <!--{% if token == True: %}
@@ -196,55 +210,63 @@
                                     <!-- <div class="tab-pane" role="tabpanel" id="step3"> -->
                                         <div class="row">
                                             <div class="col-xs-4"></div>
-                                            <div class="col-xs-4">
+                                            <div class="col-xs-4 form-group">
                                                 <div class="row">
-                                                    <H3 class="text-uppercase text-center">Personal Details</H3>
-                                                    <H4 class="text-uppercase text-center">We will never sell it</H4>
+													<div class="form-top-left">
+														<H3 class="text-uppercase text-center">Personal Details</H3>
+														<p class="text-uppercase text-center">We will never sell it</p>
+													</div/>
                                                 </div>
                                                 <div class="row">
+													<div class="form-bottom-left">
                                                     <!-- <div class="col-xs-12 email-reg"> -->
                                                         <div class="col-xs-12">
                                                         <input type="text" class="form-control" style="margin-bottom: 5px" placeholder="First Name">
                                                     </div>
-                                                </div>
-                                                <div class="row">
+                                                <!-- </div> -->
+                                                <!-- <div class="row"> -->
                                                     <div class="col-xs-12">
                                                         <input type="text" class="form-control" style="margin-bottom: 5px" placeholder="Last Name">
                                                     </div>
-                                                </div>
-                                                <div class="row">
+                                                <!-- </div> -->
+                                                <!-- <div class="row"> -->
                                                     <div class="col-xs-12">
                                                         <input type="text" class="form-control" style="margin-bottom: 5px" placeholder="Phone">
                                                     </div>
-                                                </div>
-                                                <div class="row">
+                                                <!-- </div> -->
+                                                <!-- <div class="row"> -->
                                                     <div class="col-xs-12">
                                                         <input type="text" class="form-control email-reg" style="margin-bottom: 5px" placeholder="Address">
                                                     </div>
-                                                </div>
+                                                <!-- </div> -->
                                                 <ul class="list-inline text-center">
                                                     <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
                                                     <li><button type="button" class="btn btn-success next-step">Next</button></li>
                                                 </ul>
                                             </div>
+											</div>
+											</div>
                                             <div class="col-xs-4"></div>
                                         </div>
                                     </div>
                                     <!-- #################################################### -->
                                     <div class="tab-pane" role="tabpanel" id="step4">
-                                        <div class="row">
+                                        <!-- <div class="row"> -->
                                             <div class="col-xs-4"></div>
-                                            <div class="col-xs-4">
+                                            <div class="col-xs-4 form-group">
                                                 <div class="row">
-                                                    <H3 class="text-uppercase text-center">CREDIT CARD DETAILS</H3>
-                                                    <p class="text-uppercase text-center">Enter the credit card details</p>
+													<div class="form-top-left">
+														<H3 class="text-uppercase text-center">CREDIT CARD DETAILS</H3>
+														<p class="text-uppercase text-center">Enter the credit card details</p>
+													</div>
                                                 </div>
                                                 <div class="row">
+													<div class="form-bottom-left">
                                                     <div class="col-xs-12">
                                                         <input type="text" class="form-control" style="margin-bottom: 5px" placeholder="Card Number">
                                                     </div>
-                                                </div>
-                                                <div class="row">
+                                                <!-- </div> -->
+                                                <!-- <div class="row"> -->
                                                     <div class="col-xs-6" style="padding-right: 0px; margin-bottom: 5px">
                                                         <select name="Month" class="form-control">
                                                             <option selected>Month</option>
@@ -276,58 +298,65 @@
                                                             <option value="2024">2024</option>
                                                         </select>
                                                     </div>
-                                                </div>
-                                                <div class="row">
+                                                <!-- </div> -->
+                                                <!-- <div class="row"> -->
                                                     <div class="col-xs-12">
                                                         <input type="text" class="form-control email-reg" style="margin-bottom: 5px"  placeholder="CVV">
                                                     </div>
-                                                </div>
+                                                <!-- </div> -->
                                                 <ul class="list-inline text-center">
                                                     <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
                                                     <li><button type="button" class="btn btn-success next-step">Next</button></li>
                                                 </ul>
                                             </div>
+											</div>
+										</div>
                                             <div class="col-xs-4"></div>
-                                        </div>
+                                        <!-- </div> -->
                                     </div>
+									<!-- #################################################### -->
                                     <div class="tab-pane" role="tabpanel" id="step5">
-                                        <div class="row">
+                                        <!-- <div class="row"> -->
                                             <div class="col-xs-4"></div>
-                                            <div class="col-xs-4">
+                                            <div class="col-xs-4 form-group">
                                                 <div class="row">
-                                                    <H3 class="text-uppercase text-center">ROUND UP DETAILS</H3>
-                                                    <p class="text-uppercase text-center">Enter the details</p>
+													<div class="form-top-left">
+														<H3 class="text-uppercase text-center">ROUND UP DETAILS</H3>
+														<p class="text-uppercase text-center">Enter the details</p>
+													</div>
                                                 </div>
                                                 <div class="row">
-                                                    <div class="col-xs-12 email-reg" >
-                                                        <select class="form-control" id="select-cause" onchange="onCauseSelect()">
+													<div class="form-bottom-left">
+                                                    <!-- <div class="col-xs-12 email-reg" > -->
+													<div class="col-xs-12">
+                                                        <select class="form-control email-reg" id="select-cause" onchange="onCauseSelect()">
                                                             <option selected value="dummy">Select your cause</option>
                                                             <option value="education">Education</option>
                                                             <option value="health">Health</option>
                                                             <option value="ngo">NGO</option>
                                                         </select>
                                                     </div>
-                                                </div>
-                                                <div class="donor-charityname row">
-                                                    <div class="col-xs-12 email-reg">
-                                                        <select class="form-control" id="select-charityName" >
+                                                <!-- </div> -->
+                                                <!-- <div class="donor-charityname row"> -->
+                                                    <div class="col-xs-12">
+                                                        <select class="form-control email-reg" id="select-charityName" >
                                                             <option selected>Select a charity</option>
                                                             <option value="education">A</option>
                                                             <option value="health">B</option>
                                                             <option value="ngo">C</option>
                                                         </select>
                                                     </div>
-                                                </div>
-												<div class="row">
+                                                <!-- </div> -->
+												<!-- <div class="row"> -->
                                                     <div class="col-xs-12">
-                                                        <input type="text" class="form-control" style="margin-bottom: 5px" placeholder="Zip Code">
+                                                        <input type="text" class="form-control email-reg" style="margin-bottom: 5px" placeholder="Zip Code">
                                                     </div>
-                                                </div>
+                                                <!-- </div> -->
                                                 <ul class="list-inline text-center">
-                                                    <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
-                                                    <li><button type="button" class="btn btn-success next-step">Next</button></li>
+                                                    <li><button type="button" class="btn btn-success next-step">Submit</button></li>
                                                 </ul>
                                             </div>
+											</div>
                                             <div class="col-xs-4"></div>
                                         </div>
                                     </div>
