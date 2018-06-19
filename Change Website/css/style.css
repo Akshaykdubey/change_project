@@ -1,8 +1,6 @@
 /*
-  Theme Name: Regna
-  Theme URL: https://bootstrapmade.com/regna-bootstrap-onepage-template/
-  Author: BootstrapMade.com
-  License: https://bootstrapmade.com/license/
+
+  Authors: Powell Mittra and Akshay Dubey
 */
 /*--------------------------------------------------------------
 # General
@@ -16,6 +14,7 @@ body {
 
 a {
   color: #2dc997;
+  font-size: 12px;
 }
 
 a:hover, a:active, a:focus {
@@ -36,11 +35,16 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
 }
 
+h5{
+font-size: 14px;
+
+}
+
 .hidden { visibility: hidden; }
 .unhidden { visibility: visible; } 
 
 /* Prelaoder */
-/*#preloader {
+#preloader {
   position: fixed;
   left: 0;
   top: 0;
@@ -49,7 +53,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 100%;
   overflow: visible;
   background: #fff url("../img/preloader.svg") no-repeat center center;
-}*/
+}
 
 /* Back to top button */
 .back-to-top {
@@ -115,7 +119,6 @@ h1, h2, h3, h4, h5, h6 {
   right: 0;
   transition: all 0.5s;
   z-index: 997;
-  /*background: rgba(255, 255, 255, 0.9);*/
 
 }
 
@@ -198,7 +201,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .hero-container {
-  /*background: linear-gradient(90deg, rgba(0, 0, 0, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url(../img/hero-bg.jpg) top center;*/
+  
   background: linear-gradient(90deg, rgba(208, 211, 212, 0) 0%, rgba(208, 211, 212, 0) 0%), url(../img/hero-bg.jpg) top center;
   position: absolute;
   background-size: cover; /*Responsive Background*/
@@ -268,14 +271,6 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 90%; /*Responsive Logo*/
   height: auto;
 }
-/*@media (max-width: 768px) {
-  #hero .logo {
-    max-height: 190px;
-    max-width: 10%;
-    margin-right: 500px;
-    
-  }
-}*/
 
 
 /*--------------------------------------------------------------
@@ -718,6 +713,26 @@ body.mobile-nav-active #mobile-nav-toggle {
 #about .about-container .video {
     margin-left: auto;
     margin-top: 100px;
+
+
+}
+
+@media (max-width: 768px){
+  #about .about-container .video{
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+  }
+
+  #about .about-container .video iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 }
 
 /*
@@ -1332,7 +1347,7 @@ margin-right: 50px;
 }
 
 section {
-    padding: 60px 0;
+    padding: 20px 10px;
 }
 
 section .section-title {
@@ -1483,4 +1498,7 @@ section .section-title {
   transition: 0.3s;
 }
 
+#footer-social{
+  padding-top: 0px;
+}
 
