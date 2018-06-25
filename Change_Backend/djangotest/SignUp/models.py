@@ -8,5 +8,19 @@ class User(models.Model):
         return self.userName
 
 class UserDetails(models.Model):
+
     user = models.ForeignKey(User, on_delete=models.CASCADE)
-    ccNum = models.CharField(max_length=20)
+    email = models.CharField(max_length=250)
+    firstName = models.CharField(max_length=250)
+    lastName = models.CharField(max_length=250)
+    phone = models.CharField(max_length=10)
+    address = models.CharField(max_length=250)
+    ccNum = models.PositiveIntegerField()
+    month = models.DateField()
+    cvvNum = models.PositiveIntegerField()
+
+
+
+
+
+
