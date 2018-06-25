@@ -17,6 +17,13 @@ a, a:hover, a:focus {
     -o-transition: all .3s; -moz-transition: all .3s; -webkit-transition: all .3s; -ms-transition: all .3s; transition: all .3s;
 }
 
+1, h2, h3, h4, h5, h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
 h1 {
 	margin-top: 10px;
 	font-size: 38px;
@@ -38,6 +45,19 @@ h3 {
     font-weight: 500;
     color: #555;
     line-height: 30px;
+}
+
+strong{
+
+font-size: 16px;
+
+}
+
+h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+  padding: 0;
 }
 
 
